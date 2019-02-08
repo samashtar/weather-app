@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
                     summary,
                     icon
                 } = data.currently
-                temperatureDegree.textContent = temperature
+                temperatureDegree.textContent = Math.floor(temperature)
                 temperatureDescription.textContent = summary
                 locationTimezone.textContent = data.timezone
                 setIcons(icon, document.querySelector('.icon'))
